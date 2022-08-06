@@ -1,0 +1,40 @@
+// This file may be used to override the Sass variables used within the Trestle
+// admin. It will be automatically included within all admin pages.
+//
+// A subset of Bootstrap and Trestle defaults can be set here.
+// For a detailed overview of the customizable variables, see the file
+// `frontend/theme/trestle/theme/_defaults.scss` within the Trestle source.
+
+// Customize admin theme colors:
+//
+  $theme-colors: (
+    "primary":   #dd9a09,
+    "secondary": #000000
+  );
+
+  a {
+    color: #644400!important;
+  };
+  .avatar-fallback{
+    display: none!important;
+  }
+  .app-header {
+
+    background-color: #936d18!important;
+  }
+
+  .app-sidebar-inner, body{
+    background-color: azure!important;
+
+  }
+
+  .app-nav .active a {
+    background: transparent!important;
+    border-left: 4px solid #4d6bb2;
+    color: #fff;
+    padding-left: 14px;
+}
+
+a:hover{
+  background-color: transparent!important;
+}

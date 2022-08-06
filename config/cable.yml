@@ -1,0 +1,16 @@
+development:
+  adapter: async
+  url: redis://localhost:6379/1
+  channel_prefix: sitename_dev
+
+test:
+  adapter: async
+
+production:
+  adapter: redis
+  url: redis://localhost:6379/1
+  channel_prefix: sitename_production
+
+ #start services 
+# sudo service redis-server start
+# bundle exec sidekiq
