@@ -1,6 +1,10 @@
 require_relative "boot"
 
 require "rails/all"
+# Pick the frameworks you want:
+require "active_model/railtie"
+require "active_job/railtie" # <== Uncomment
+# ... everything else remains the same
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -10,7 +14,7 @@ module Weblog
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
-
+    config.active_job.queue_adapter = :sidekiq
 
     # Configuration for the application, engines, and railties goes here.
     #

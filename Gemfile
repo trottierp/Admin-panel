@@ -24,6 +24,7 @@ gem 'trestle-active_storage', git: 'https://github.com/rzilient-club/trestle-act
 gem "image_processing", ">= 1.2"
 gem 'trestle-sidekiq'
 gem 'redis-namespace'
+gem 'foreman', '~> 0.87.2'
 
 #FAKE DATABASE
 

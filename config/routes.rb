@@ -16,6 +16,11 @@ Rails.application.routes.draw do
   post 'endangered/destroy', to: 'endangered#destroy'
   get 'home/index'
   root 'home#index'
+   # route where any visitor require the helloWorldJob to be triggered
+   post "home/trigger_job"
+
+   # where visitor are redirected once job has been called
+   get "other/job_done"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
 
